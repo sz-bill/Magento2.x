@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Magento2.x建立模块步骤</title>
+<style type="text/css">
+*{font-size:12px;}
+ul{margin:5px 8px; padding: 0 0 0 5px;}
+a{text-decoration:none; color:#454040; padding:2px 5px;}
+a:hover{text-decoration:underline; color:#fff; background: #349425;}
+</style>
+</head>
+
+<div style="width:250px; float:left; border:1px solid #ccc; background:#F9F9ED; padding:5px;">
+  <h4>PHP developer guide</h4>
+  <ul role="navigation">
+    <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/bk-extension-dev-guide.html"><strong>Introduction</strong></a>
+      <ul>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/developers_roadmap.html">Developer roadmap</a></li>
+      </ul>
+    </li>
+    <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/prepare.html"><strong>Prepare</strong></a>
+      <ul>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/composer-integration.html">Composer integration</a></li>
+      </ul>
+    </li>
+    <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/build.html"><strong>Build</strong></a>
+      <ul>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/module-file-structure.html">Component file structure</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/required-configuration-files.html">Define your configuration files</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/component-registration.html">Component registration</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/XSD-XML-validation.html">URN schema validation</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/create_component.html">Name your component</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/module-load-order.html">Component load order</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/enable-module.html">Enable a component</a></li>
+      </ul>
+    </li>
+    <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/validate.html"><strong>Validate</strong></a>
+      <ul>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/test-module.html">Test your component</a></li>
+      </ul>
+    </li>
+    <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/package.html"><strong>Package</strong></a>
+      <ul>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/package_module.html">Package a component</a></li>
+      </ul>
+    </li>
+    <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/cli-add.html"><strong>Add CLI commands</strong></a>
+      <ul>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/cli-naming-guidelines.html">Command naming guidelines</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/cli-howto.html">How to add CLI commands</a></li>
+      </ul>
+    </li>
+    <li><strong><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/module-development.html">Component development</a></strong>
+      <ul>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/service-contracts/service-contracts.html">Service contracts</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/api-concepts.html">Public interfaces &amp; APIs</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/service-contracts/design-patterns.html">Service contract design patterns</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/depend-inj.html">Dependency injection</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/code-generation.html">Code generation</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/attributes.html">EAV and extension attributes</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/plugins.html">Magento plug-ins</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/routing.html">Routing</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/indexing.html">Indexing</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/service-contracts/service-to-web-service.html">Configure services as web APIs</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/backward-compatibility.html">Backward compatibility</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/extension-dev-guide/message-queues.html">Message Queues (Enterprise Edition Only)</a></li>
+        <li><a target="irm" href="http://devdocs.magento.com/guides/v2.0/howdoi/php/php_clear-dirs.html">Clear directories during development</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div style="width:78%; margin-left:20px; float:left; border:0px solid #ccc; background:#F9F9ED;">
+<iframe id="irm" name="irm" width="100%" height="100%" style="padding:2px; margin:0px; width:100%; height:100%;" scrolling="yes" frameborder="0" src="#"></iframe>
+</div>
+<body>
+</body>
+</html>
