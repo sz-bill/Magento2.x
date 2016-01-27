@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+{{License}}
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="Sample_News::news" title="News" module="Sample_News" sortOrder="65" resource="Sample_News::news"/>
+        <add id="Sample_News::author" title="Authors" module="Sample_News" sortOrder="10" action="sample_news/author" resource="Sample_News::author" parent="Sample_News::news" />
+    </menu>
+</config>
