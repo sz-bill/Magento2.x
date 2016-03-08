@@ -1,0 +1,12 @@
+使用块来设置模板
+
+要设置模板的块，使用<argument>指令来传递。
+
+示例：改变page模板的title块
+
+<referenceBlock name="page.main.title">
+        <arguments>
+            <argument name="template" xsi:type="string">Namespace_Module::title_new.phtml</argument>
+        </arguments>
+ </referenceBlock>
+模型的路径被指明关系到模型的view/<area>/templates/目录。<area>对应布局文件被使用的地方。

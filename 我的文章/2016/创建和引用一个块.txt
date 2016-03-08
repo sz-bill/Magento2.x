@@ -1,0 +1,24 @@
+创建一个块
+
+块的创建（声明）使用<block>指令。
+
+示例：增加一个产品SKU信息的块
+
+<block class="Magento\Catalog\Block\Product\View\Description" name="product.info.sku" template="product/view/attribute.phtml" after="product.info.type">
+    <arguments>
+        <argument name="at_call" xsi:type="string">getSku</argument>
+        <argument name="at_code" xsi:type="string">sku</argument>
+        <argument name="css_class" xsi:type="string">sku</argument>
+    </arguments>
+</block>
+引用一个块
+
+要更新一个块，使用<referenceBlock>指令。
+
+示例：向logo块传送图片
+
+<referenceBlock name="logo">
+        <arguments>
+            <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+        </arguments>
+</referenceBlock>

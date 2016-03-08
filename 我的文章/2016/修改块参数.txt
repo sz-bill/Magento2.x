@@ -1,0 +1,54 @@
+修改块参数
+
+要修改块参数，使用<referenceBlock>指令
+
+示例：改变已存在块中的参数并添加一个新参数。
+
+初始块声明：
+
+...
+<block class="Namespace_Module_Block_Type" name="block.example">
+    <arguments>
+        <argument name="label" xsi:type="string">Block Label</argument>
+    </arguments>
+</block>
+...
+扩展布局：
+
+...
+<referenceBlock name="block.example">
+    <arguments>
+        <!-- Modified block argument -->
+        <argument name="label" xsi:type="string">New Block Label</argument>
+        <!- Newly added block argument -->
+        <argument name="custom_label" xsi:type="string">Custom Block Label</argument>
+    </arguments>
+</referenceBlock> 
+...
+使用块对象方法来设置块性能
+
+有两种方式访问块对象方法：
+
+对<block>或<referenceBlock>使用<argument>指令
+使用<action>指令。不推荐使用该方法，不过可以用来调用未被重构，不能用<argument>的方法。
+示例1：使用<argument>为产品页面设置CSS类并添加一个属性
+
+扩展布局：
+
+<referenceBlock name="page.main.title">
+		<arguments>
+		    <argument name="css_class" xsi:type="string">product</argument>
+		    <argument name="add_base_attribute" xsi:type="string">itemprop="name"</argument>
+		</arguments>
+	</referenceBlock>
+示例2：使用<action>设置页面标题
+
+扩展布局：
+
+...
+	<referenceBlock name="page.main.title">
+	    <action method="setPageTitle">
+	        <argument translate="true" name="title" xsi:type="string">Catalog Advanced Search</argument>
+	    </action>
+	</referenceBlock>
+	...

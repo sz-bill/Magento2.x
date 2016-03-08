@@ -1,0 +1,21 @@
+创建一个容器
+
+使用下面的例子来创建（声明）一个容器
+
+<container name="some.container" as="someContainer" label="Some Container" htmlTag="div" htmlClass="some-container" />
+
+
+
+引用一个容器
+
+要更新一个容器，使用<referenceContainer>指令。
+
+示例：添加链接到页面头部面板
+
+<referenceContainer name="header.panel">
+        <block class="Magento\Framework\View\Element\Html\Links" name="header.links">
+            <arguments>
+                <argument name="css_class" xsi:type="string">header links
+            </arguments>
+        </block>
+</referenceContainer>
