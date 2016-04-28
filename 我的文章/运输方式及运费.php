@@ -1,4 +1,8 @@
 <?php
+## 给运输方式加一个自定义的保险费等
+## http://stackoverflow.com/questions/34202497/how-to-add-custom-attribute-to-shipping-method-in-magento2
+
+
 namespace SM\Express\Model\Carrier;
 
 use Magento\Quote\Model\Quote\Address\RateRequest;
